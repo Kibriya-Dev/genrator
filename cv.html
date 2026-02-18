@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV Generator</title>
+  <link rel="stylesheet" href="cvstyle.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="navbar" style="padding: 0px;">
+    <div class="main">
+    <nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Generator</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="main.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">I Cards Generator</a></li>
+            <li><a class="dropdown-item" href="#">Wedding card Generator</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">More</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  href="contact.html">Contact us</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-dark" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+</div>
+</section>
+<div class="text-center mt-4">
+  <a href="main.html" class="btn btn-secondary">⬅ Back to Home</a>
+</div>
+
+<div class="cv-container text-center">
+  <h2>Dynamic CV Generator</h2>
+
+  <input type="text" placeholder="Full Name" id="cvName" />
+  <input type="text" placeholder="Title / Position" id="cvTitle" />
+  <input type="text" placeholder="Email" id="cvEmail" />
+  <input type="text" placeholder="Phone" id="cvPhone" />
+  <textarea placeholder="Write a short bio / summary" id="cvBio"></textarea>
+  <textarea placeholder="Skills (comma separated)" id="cvSkills"></textarea>
+  <textarea placeholder="Experience (comma separated)" id="cvExperience"></textarea>
+
+  <button onclick="generateCV()" class="btn btn-primary mt-2">Generate CV</button>
+</div>
+
+<div id="cv_main_container" class="text-center"></div>
+
+<button id="printCVBtn" onclick="printCV()" class="btn btn-success mt-3"  style="display:none;"> Print CV</button>
+<footer class="bg-dark text-white text-center p-4">
+  <p>© 2025 Generator Website | Made by Kibriya</p>
+</footer>
+
+
+<script src="cv.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> 
+
+
+</body>
+</html>

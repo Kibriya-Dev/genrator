@@ -1,0 +1,50 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    margin: 0px;
+
+    background: white;
+    
+}
+
+.main nav{
+    background: gray;
+       
+}
+.main-text{
+    background-color:lightgray;
+  padding: 30px;
+
+
+}
+.main-text img{
+    border-radius: 20px;
+}
+.main-text h2{
+ font-size: 50px;
+}
+.services .card {
+  transition: 0.3s;
+}
+
+.services .card:hover {
+  transform: translateY(-10px);
+}
+section h1 {
+  font-weight: bold;
+}
+
+section p {
+  font-size: 16px;
+  color: #555;
+}
+#form {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}

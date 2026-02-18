@@ -1,0 +1,66 @@
+.cv-container {
+  max-width: 500px;
+  margin: 20px auto;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.cv-container input,
+.cv-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#cv_main_container {
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.cv-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+.cv-card h2 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.cv-card h4 {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.cv-card p {
+  margin-bottom: 5px;
+}
+
+.cv-card ul {
+  margin: 5px 0;
+  padding-left: 20px;
+}
+.main{
+    width: 100%;
+    margin: 0px;
+
+    background: white;
+    
+}
+
+.main nav{
+    background: gray;
+       
+}
+#printCVBtn {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+}
