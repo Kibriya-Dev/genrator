@@ -22,11 +22,19 @@
 }
 
 .cv-card {
-  background: #fff;
+  /* background: #fff; */
+ background-image: url(./assets/cvbg.png);
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
   text-align: left;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh; /* responsive */
+  position: relative;
 }
 
 .cv-card h2 {

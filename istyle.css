@@ -65,15 +65,23 @@ button:hover {
 }
 
 .id-card {
-  width: 320px;
+  width: 200px;
   margin: 30px auto;
-  padding: 20px;
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  padding: 50px;
+  /* background: linear-gradient(135deg, #1e3c72, #2a5298); */
+  background-image: url(./assets/icardbg2.jpg);
+    overflow: hidden;      /* image ko corners ke bahar nahi jaane deta */
+  
+
+  background-size: cover;       /* image poore card ko cover kare */
+  background-position: center;  /* image center se align ho */
+  background-repeat: no-repeat;
   border-radius: 20px;
-  color: white;
+  /* color: white; */
   text-align: center;
   box-shadow: 0 15px 25px rgba(0,0,0,0.3);
   position: relative;
+  height: 372px;
 }
 
 .id-card img {
@@ -106,7 +114,7 @@ button:hover {
     visibility: hidden;
   }
 
-  .id-card, .id-card * {
+  .id-card, .id-card *,.id-card img {
     visibility: visible;
   }
 

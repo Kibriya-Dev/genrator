@@ -72,17 +72,28 @@ button:hover {
 
 
 
-.card {
+.cardd {
   width: 450px;
   padding: 30px;
   margin: 30px auto;
   border-radius: 15px;
-  background: linear-gradient(135deg, #f80909, #7a5903);
-  color: white;
+  /* background: linear-gradient(135deg, #f80909, #7a5903); */
+  background-image: url(assets/card.jpg);
+  color: black;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   font-family: cursive;
   border: 4px solid gold;
+   overflow: hidden;      /* image ko corners ke bahar nahi jaane deta */
+  
+
+  background-size: cover;       /* image poore card ko cover kare */
+  background-position: center;  /* image center se align ho */
+  background-repeat: no-repeat;
+  height: 600px;
+  padding-top: 130px;
+  line-height: 56px;
+  font-size: 25px;
 }
 
 

@@ -17,7 +17,7 @@ function generateCard() {
   let messageEl = document.createElement("p");
 
   
-  card.className = "card";
+  card.className = "cardd";
 
   title.innerText = "Wedding Invitation";
   names.innerText = groom + " WEDS " + bride;
